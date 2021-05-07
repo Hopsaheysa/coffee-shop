@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto Condensed" sans-serif;
+}
+
+header {
+  background-color: rgb(242, 241, 241);
+}
+.container {
+  display: flex;
+  height: 10em;
+  justify-content: space-between;
+  margin: 0 10%;
+
+  .logo {
+    margin: 10px;
+  }
+  .links {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: center;
+    a {
+      color: grey;
+      text-decoration: none;
+      margin: 2%;
+      &:active {
+        color: rgb(95, 95, 95);
+      }
+    }
+  }
+}
