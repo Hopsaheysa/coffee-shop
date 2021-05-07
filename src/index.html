@@ -52,53 +52,54 @@
         </div>
       </nav>
     </header>
+
+    <main>
+      <h1>Generic Hipster Coffee</h1>
+      <h2>Specialty coffee, fresh food & local community.</h2>
+      <img class="counter" src="/img/counter.jpg" alt="coffee-shop" />
+      <div class="info-container">
+        <div class="info-container-open">
+          <h3>Opening hours</h3>
+          <p>sunday to thursday: 8 am to 11 pm</p>
+          <p>friday to saturday: 8 am to 1 am</p>
+        </div>
+        <div class="info-container-book">
+          <h3>Book a table</h3>
+          <p>Call +1 415-321-4567</p>
+        </div>
+        <div class="info-container-address">
+          <h3>Address</h3>
+          <p>321 Ivy</p>
+          <p>St.San Francisco, CA 94102</p>
+        </div>
+      </div>
+      <h3>My Google Maps Demo</h3>
+      <!--The div element for the map -->
+      <div id="map"></div>
+
+      <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+      <script
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+        async
+      ></script>
+    </main>
+
+    <footer>
+      <nav class="footer-container">
+        <div class="footer-links">
+          <a class="footer-links-a" href="index.html">Home</a>
+          <a class="footer-links-a" href="menu.html">Menu</a>
+          <a class="footer-links-a" href="coffee.html">Coffee</a>
+          <a class="footer-links-a" href="story.html">Our Story</a>
+        </div>
+      </nav>
+      <nav class="footer-info">
+        <h3>#HIPSTERMAKECOFFEE</h3>
+        <p>
+          Follow us on <a href="http://google.com">Twitter</a> and
+          <a href="http://google.com">Instagram</a>
+        </p>
+      </nav>
+    </footer>
   </body>
-  <main>
-    <h1>Generic Hipster Coffee</h1>
-    <h2>Specialty coffee, fresh food & local community.</h2>
-    <img class="counter" src="/img/counter.jpg" alt="coffee-shop" />
-    <div class="info-container">
-      <div class="info-container-open">
-        <h3>Opening hours</h3>
-        <p>sunday to thursday: 8 am to 11 pm</p>
-        <p>friday to saturday: 8 am to 1 am</p>
-      </div>
-      <div class="info-container-book">
-        <h3>Book a table</h3>
-        <p>Call +1 415-321-4567</p>
-      </div>
-      <div class="info-container-address">
-        <h3>Address</h3>
-        <p>321 Ivy</p>
-        <p>St.San Francisco, CA 94102</p>
-      </div>
-    </div>
-    <h3>My Google Maps Demo</h3>
-    <!--The div element for the map -->
-    <div id="map"></div>
-
-    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
-      async
-    ></script>
-  </main>
-
-  <footer>
-    <nav class="footer-container">
-      <div class="footer-links">
-        <a class="footer-links-a" href="index.html">Home</a>
-        <a class="footer-links-a" href="menu.html">Menu</a>
-        <a class="footer-links-a" href="coffee.html">Coffee</a>
-        <a class="footer-links-a" href="story.html">Our Story</a>
-      </div>
-    </nav>
-    <nav class="footer-info">
-      <h3>#HIPSTERMAKECOFFEE</h3>
-      <p>
-        Follow us on <a href="http://google.com">Twitter</a> and
-        <a href="http://google.com">Instagram</a>
-      </p>
-    </nav>
-  </footer>
 </html>

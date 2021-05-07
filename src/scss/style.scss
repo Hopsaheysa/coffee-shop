@@ -30,8 +30,6 @@ header {
 
   .header-logo {
     margin: 10px;
-    @media (max-width: 740px) {
-    }
   }
   .header-links {
     display: flex;
@@ -62,27 +60,26 @@ main {
   @media (max-width: 740px) {
     margin: 5%;
   }
-    h1 {
-      text-transform: uppercase;
-      font-size: 3rem;
-      font-weight: 300;
-    }
-    h2 {
-      text-transform: uppercase;
-      font-size: 2.5rem;
-      font-weight: 200;
-    }
-    h3 {
-      text-transform: uppercase;
-      font-size: 2rem;
-      font-weight: 200;
-    }
-    .counter {
-      max-width: 100%;
-      height: auto;
-    }
+  h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 300;
   }
-
+  h2 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 200;
+  }
+  h3 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 200;
+  }
+  .counter {
+    max-width: 100%;
+    height: auto;
+  }
+}
 
 .info-container {
   display: flex;
@@ -122,9 +119,10 @@ footer {
     width: 60%;
 
     // margin-top: 1%;
-    @media (max-width: 740px){
-        width: 100%;
-        justify-content: space-between;
+    @media (max-width: 740px) {
+      width: 100%;
+      justify-content: space-around;
+      font-size: 3vw;
     }
     &-a {
       margin: 20px 10px 25px;
