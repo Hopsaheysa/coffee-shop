@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    height: 100vh;
+  }
+  
+  header {
+    background-color: rgb(242, 241, 241);
+  }
+  .header-container {
+    display: flex;
+    height: 10em;
+    justify-content: space-between;
+    margin: 0 10%;
+  
+    .logo {
+      margin: 10px;
+    }
+    .header-links {
+      display: flex;
+      width: 50%;
+      justify-content: flex-end;
+      align-items: center;
+      a {
+        color: grey;
+        text-decoration: none;
+        margin: 2%;
+        align-items: center;
+        &:active {
+          color: rgb(95, 95, 95);
+        }
+      }
+    }
+  }
+  
+  main {
+    margin: 0% 15%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "quejina mormora"
+      "kamwagi decaf";
+    h4 {
+      padding: 15px;
+      margin-top: 0%;
+      margin-bottom: 0%;
+      font-size: 2rem;
+      font-weight: 200;
+    }
+    p {
+    }
+    div {
+      background-color: rgb(238, 238, 238);
+      margin: 30px;
+    }
+    .quejina {
+      grid-area: quejina;
+    }
+    .mormora {
+      grid-area: mormora;
+    }
+    .kamwagi {
+      grid-area: kamwagi;
+    }
+    .decaf {
+      grid-area: decaf;
+    }
+  }
+  
+  footer {
+    margin-top: auto;
+    padding: 5px 5px 0px 5px;
+    bottom: 0;
+    width: 100%;
+    background: grey;
+    background-color: #343a40;
+    color: white;
+    height: 13em;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      width: 60%;
+      // margin-top: 1%;
+  
+      &-a {
+        margin: 20px 10px 25px;
+        &:visited {
+          color: rgb(62, 62, 223);
+        }
+        &:active {
+          color: rgb(95, 95, 95);
+        }
+      }
+    }
+  }
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+    p {
+      margin: 0;
+    }
+  }
+  

@@ -10,7 +10,7 @@ body {
 body {
   margin: 0;
   font-family: "Roboto Condensed", sans-serif;
-  min-height: 130vh;
+  height: 100vh;
 }
 
 header {
@@ -43,28 +43,48 @@ header {
 }
 
 main {
-  margin: 0 10%;
-  .counter {
-    max-width: 100%;
-    height: auto;
-  }
+  margin: 0% 15%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.info-container {
-  display: flex;
-
-  &-open {
-    margin-right: 10%;
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "quejina mormora"
+    "kamwagi decaf";
+  h4 {
+    padding: 15px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size: 2rem;
+    font-weight: 200;
   }
-  &-book {
-    margin-right: 10%;
+  p {
   }
-  &-address {
+  div {
+    background-color: rgb(238, 238, 238);
+    margin: 30px;
+  }
+  .quejina {
+    grid-area: quejina;
+  }
+  .mormora {
+    grid-area: mormora;
+  }
+  .kamwagi {
+    grid-area: kamwagi;
+  }
+  .decaf {
+    grid-area: decaf;
   }
 }
 
 footer {
-
   margin-top: auto;
   padding: 5px 5px 0px 5px;
   bottom: 0;

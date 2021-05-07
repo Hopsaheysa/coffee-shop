@@ -11,16 +11,44 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <title>Add Map</title>
+
+    <style type="text/css">
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 100%;
+        /* The width is the width of the web page */
+      }
+    </style>
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: -25.344, lng: 131.036 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
   </head>
   <body>
     <header>
       <nav class="header-container">
         <img class="header-logo" src="/img/logo.svg" alt="Coffee logo" />
         <div class="header-links">
-          <a href="#home">Home</a>
-          <a href="#mission">Menu</a>
-          <a href="#about-us">Coffee</a>
-          <a href="#our-team">Our Story</a>
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="coffee.html">Coffee</a>
+          <a href="story.html">Our Story</a>
         </div>
       </nav>
     </header>
@@ -44,15 +72,24 @@
         <p>321 Ivy St.San Francisco, CA 94102</p>
       </div>
     </div>
+    <h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
   </main>
 
   <footer>
     <nav class="footer-container">
       <div class="footer-links">
-        <a class="footer-links-a" href="#home">Home</a>
-        <a class="footer-links-a" href="#mission">Menu</a>
-        <a class="footer-links-a" href="#about-us">Coffee</a>
-        <a class="footer-links-a" href="#our-team">Our Story</a>
+        <a class="footer-links-a" href="index.html">Home</a>
+        <a class="footer-links-a" href="menu.html">Menu</a>
+        <a class="footer-links-a" href="coffee.html">Coffee</a>
+        <a class="footer-links-a" href="story.html">Our Story</a>
       </div>
     </nav>
     <nav class="footer-info">
